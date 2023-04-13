@@ -13,7 +13,6 @@ website:
       <a href="contact.qmd">Contact</a> 
   title: "MRTH"
   navbar:
-    logo: logo.svg
     left:
       
       - about.qmd

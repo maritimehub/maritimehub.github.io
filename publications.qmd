@@ -1,3 +1,38 @@
 ---
 title: 'Publications'
 ---
+
+::: {.column-page}
+
+
+```{python}
+#| echo: false
+#| output: "asis"
+### PUT THIS WITHIN ::: {.callout-note collapse="true" title="Short list" appearance="minimal"}
+import pandas as pd
+import warnings
+warnings.filterwarnings('ignore')
+#read .xlsx file to dataframe
+
+df = pd.read_excel('pubs/list.xlsx', sheet_name='Sheet1')
+# df[['FORMAT', 'TITLE', 'PUBLISHER', 'AUTHOR']].to_html(index=False)
+
+
+```
+
+
+::: {.pubtable}
+
+```{python}
+#| echo: false
+#| output: "asis"
+print("|Format|Author(s)|Title|Publisher|Link|")
+print("|--|----|-------|---|:-:|")
+import string
+for index, row in df.iterrows():
+    authors = string.capwords(row['AUTHOR'])
+    print(f'|{row["FORMAT"]}|{authors}|{row["TITLE"]}|{row["PUBLISHER"]}|![](file-text.svg)')
+
+```
+:::
+:::

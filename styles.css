@@ -10,4 +10,11 @@
     align-self: center;
     margin-top: 0px;
     font-style: italic;
+    font-size: 14px;
 }
+
+.modebar {
+    display: none !important;
+}
+
+.pubtable tr:nth-child(even) { background: #eee; }
