@@ -1,0 +1,29 @@
+---
+title: "Heat and cold recovery"
+format:
+    html:
+        toc: true
+---
+
+## Cold recovery
+::: {.main-text}
+Some fishing vessels are planning to use LNG (Liquefied Natural Gas) as fuel for a more environmentally friendly propulsion. LNG is stored at temperatures between -165 ℃ and -138 ℃, and when using it as fuel it is possible to utilize the evaporation heat from the gasification of LNG to cover a significant portion of the cold needed to freeze the fish. There exists a concept developed for cold recovery on LNG-fueled passenger vessels, used for covering parts of the AC cooling demand. However, since the cooling demand, operational conditions and operation pattern for a fishing vessel differs in many ways from that of a passenger vessel, there is a need for developing concepts adapted to fishing vessels.
+:::
+::: {.img-capt}
+![](Saltshipdesign.jpg)
+
+Liegruppen, a Norwegian fishing company, has conctracted the first LNG-powered trawler. Source: [Salt Ship Design](www.saltship.com)
+:::
+::: {.main-text}
+As LNG is stored under cryogenic temperatures, vaporization/heating is essential before combustion in the gas engine. There are several ways of transferring LNG to the engine and depending on the method vaporization energy can be recovered from the system. The two standard methods of transferring LNG from the fuel tank to the engine are by using pressure build-up or a cryogenic fuel pump systems. In a pressure build up system, the entire tank is brought up to the pressure required by the engines. The pressure then forces the LNG through the vaporizer and to the engine. In the cryogenic fuel pump systems the pump supplies the pressure required by the engines. With a dual fuel engine, this is 6 to 8 bar, while gas engines require a pressure of 2 to 3 bar. Before entering the engine the LNG vaporize in the cold box and a heat source is required. The super-heating of gas should be in the range of 0 to 60 ℃ before it burns in the engine. The recovery of vaporization energy (cold recovery) for onboard applications will reduce the overall energy consumption.
+:::
+::: {.img-capt}
+![](LNG-fuel-pump-system.jpg-2-768x281.png)
+
+LNG fuel system with cryogenic pump
+:::
+
+## Heat recovery
+::: {.main-text}
+In today’s vessels, excess heat from the propulsion engines can be used for space and tap water heating but may not be enough for other processes onboard, for example enzymatic hydrolysis, used for utilization of marine raw material. For future propulsion systems, such as hybrid or fully electrified systems there are less or no surplus heat available. To provide the required heat, it is possible to utilize surplus heat from the refrigeration system. The surplus heat is normally available at lower temperature levels and the installation of a heat pump, to lift the temperature level, is needed. Heat pump systems with the refrigerant CO2 are brilliant for these cases, since these are compact units and the refrigerant is detectable and therefore not dangerous if there are leakages. These systems are utilized by most Norwegian supermarkets and some industrial process plants but must be adjusted for fishing vessels.
+:::

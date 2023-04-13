@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  search:
+    location: navbar
+    type: overlay
+  page-footer:
+    left:
+      The Maritime Refrigeration Technology Hub (2021-)
+    center:
+      <a href="contact.qmd">Contact</a> 
+  title: "MRTH"
+  navbar:
+    logo: logo.svg
+    left:
+      
+      - about.qmd
+      - publications.qmd
+      - stakeholders.qmd
+      - contact.qmd
+      - news.qmd
+      - text: "More"
+        menu:
+          - freezingcooling.qmd
+          - heatcold.qmd
+          - fluids.qmd
+          - sust.qmd
+
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,13 @@
+/* css styles */
+.main-text {
+    text-align: justify;
+    text-justify: auto;
+    line-height: 2;
+}
+
+.img-capt {
+    text-align: center;
+    align-self: center;
+    margin-top: 0px;
+    font-style: italic;
+}

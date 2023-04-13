@@ -1,0 +1,114 @@
+---
+css: index.css
+page-layout: custom
+toc: false
+---
+
+::: {.hero-banner}
+::: {.content-block}
+::: {.hero-text}
+# The Maritime Refrigeration Technology Hub
+Energy efficient and climate friendly cooling, freezing and heating onboard marine vessels. This hub aims to develop and demonstrate new technologies and solutions for the maritime sector, with respect to thermal onboard systems. The hub is a collaboration between the research partners NTNU, SINTEF Ocean and SINTEF Energy Resarch, together with industry partners.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table cellpadding="10" style="background-color:rgba(0,0,0,0)">
+<tbody>
+<tr>
+<td>
+<a href="freezingcooling.html">
+<div class="container">
+  <div class="icon">![](icon1.png)</div>
+  <div class="Textt">Freezing, cooling, heating, ventilation</div>
+  <div class="readmore">Read more</div>
+</div>
+</a>
+</td>
+<td>
+<a href="heatcold.html">
+<div class="container">
+  <div class="icon">![](icon2.png)</div>
+  <div class="Textt">Heat and cold recovery</div>
+  <div class="readmore">Read more</div>
+</div>
+</a>
+</td>
+<td>
+<a href="fluids.html">
+<div class="container">
+  <div class="icon">![](icon3.png)</div>
+  <div class="Textt">Working fluids</div>
+  <div class="readmore">Read more</div>
+</div>
+</a>
+</td>
+<td>
+<a href="sust.html">
+<div class="container">
+  <div class="icon">![](icon4.png)</div>
+  <div class="Textt">Sustainability</div>
+  <div class="readmore">Read more</div>
+</div>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+:::
+:::
+:::
+
+
+
+::: {.about}
+# About
+::: {.main-text}
+The Maritime Refrigeration Technology Hub is established as a response to the need for intensified knowledge transfer and information distribution regarding utilization of more climate friendly solutions to heating and cooling onboard maritime vessels.
+The widespread usage of the refrigerant R-22 and the expected transition from hydrochlorofluorocarbons (HCFC) to hydrofluorocarbon (HFC) in the HVAC&R (Heating, Ventilating and Air Conditioning & Refrigeration) systems of marine vessels was directly mentioned during the talks leading to the decision in Kigali, Rwanda, where the global phase down of HFCs was decided at the 28th Meeting of the Parties under the Montreal Protocol (Oct. 2016).
+
+Due to the harsh physical environment on marine vessels, the direct refrigerant emissions are often very high. According to the International Maritime Organisation the total use of HCFC/HFC as refrigerant in the world merchant fleet is estimated to consist of 70% R-22, 26% R-134a and 4% R-404A (IMO, 2014). The release of refrigerants from global shipping (refrigeration containers excluded) is estimated at 8,400 tonnes, which corresponds to around 15 million tonnes CO2 equivalent emissions. If these numbers are compared to the CO2 emissions of shipping, the refrigerant emissions constitute about 2% of the greenhouse gas (GHG) emissions of shipping.
+
+Currently there is only scattered information available on how the maritime sector could leapfrog directly towards a refrigeration technology with a low environmental impact, and hence the intention of this web-based technology hub is to collect and disseminate information, experience and knowledge to accelerate this transition for the maritime sector.
+
+The initiative for the hub is taken by Sintef Ocean, Sintef Energy Research and the Norwegian University of Science and Technology through the projects Coolfish and CruiZE.
+:::
+:::
+
+::: {.projects}
+<div class="grid">
+  <div class="g-col-2"></div>
+  <div class="g-col-4" style="text-align: left;">
+
+::: {.coolfish}
+::: {.coolfish-text}
+# CoolFish
+
+Development of technology and increased knowledge for more energy efficient and climate friendly cooling, freezing and heating onboard fishing vessels
+:::
+:::
+
+  </div>
+  <div class="g-col-4" style="text-align: left;">
+
+::: {.cruize}
+::: {.cruize-text}  
+# CruiZE
+Cruising towards zero emission this project aims to develop energy-efficient technologies for a more environment-friendly cruise line industry.
+:::
+:::
+<br><br><br><br><br>  
+  </div>
+  <div class="g-col-2"></div>
+</div>
+
+:::
+
+::: {.contact-parent}
+::: {.headshot}
+
+![](contact3_.jpg)
+:::
+::: {.textarea}
+Annet her Cruising towards zero emission this project aims to develop energy-efficient technologies for a more environment-friendly cruise line industry.
+:::
+
+:::
