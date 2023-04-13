@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>MRTH - Working fluids</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./logo.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MRTH</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./publications.html" rel="" target="">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./stakeholders.html" rel="" target="">
+ <span class="menu-text">Stakeholders</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html" rel="" target="">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html" rel="" target="">
+ <span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-more" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">More</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-more">    
+        <li>
+    <a class="dropdown-item" href="./freezingcooling.html" rel="" target="">
+ <span class="dropdown-text">Freezing, cooling, heating and ventilation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./heatcold.html" rel="" target="">
+ <span class="dropdown-text">Heat and cold recovery</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./fluids.html" rel="" target="">
+ <span class="dropdown-text">Working fluids</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./sust.html" rel="" target="">
+ <span class="dropdown-text">Sustainability</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#refrigerants" id="toc-refrigerants" class="nav-link active" data-scroll-target="#refrigerants">Refrigerants</a></li>
+  <li><a href="#regulations" id="toc-regulations" class="nav-link" data-scroll-target="#regulations">Regulations</a></li>
+  <li><a href="#classification-societies" id="toc-classification-societies" class="nav-link" data-scroll-target="#classification-societies">Classification Societies</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Working fluids</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="refrigerants" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="refrigerants">Refrigerants</h2>
+<div class="column-page">
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<div class="grid">
+<div class="g-col-6">
+<p><img src="Working-fluid-1-1024x684.jpg" class="img-fluid"></p>
+</div>
+<div class="g-col-6">
+<div class="main-text">
+<p>Refrigeration has a great importance for post-harvesting process of fish products in marine applications and is pivotal for sustainable food supply. This is because, the fishes must be stored at certain temperatures to keep their freshness and nutritional values.</p>
+<p>Compressor-based vapour compression refrigeration technology is the dominant technology utilised in marine refrigeration applications. As working fluid, the refrigerants are used in vapour compression refrigeration technologies. There are different types of refrigerants. Depending on the application and capacity, the most suitable refrigerant is selected.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="main-text page-columns page-full">
+<div class="page-columns page-full"><p>R-22 (HFCF-22) is the dominant refrigerant in marine refrigeration systems with a share of 70% in marine applications, particularly in fishing vessels (UNEP, 2016)<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>. However, it has harmful effects on the environment such as high ozone depletion (ODP) and global warming potential (GWP). Due to its detrimental effects, transition to the systems with environment-friendly refrigerants is essential for a sustainable and emission-free future. All other synthetic refrigerants -chlorofluorocarbons (CFCs), hydrochlorofluorocarbons (HCFCs), and hydrofluorocarbons (HFCs) are also harmful and therefore they will be phased out soon. Hydrofluorolefins (HFOs), such as R-1234yf, R1234ze and R-513A etc., which have low GWP thanks to their one or more carbon-carbon double bonds that enable them to be disintegrated in the atmosphere in less than 11 days, are also seen as alternatives to the existing R-22 systems. This short disintegration period, however, causes an increase in releasing trifluoroacetic acid (TFA) which is toxic and may cause serious health hazards (Adamson, 2021)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Moreover, they are flammable which makes their installation to marine applications difficult, particularly in fishing vessels.</p><div class="no-row-height column-margin column-container"><li id="fn1"><p><sup>1</sup>&nbsp;UNEP 2016</p></li><li id="fn2"><p><sup>2</sup>&nbsp;Adamson 2021</p></li></div></div>
+<p>In marine refrigeration, transition from environment harmful technologies to environmentally benign ones will be possible by utilising the systems based on natural refrigerants, especially ammonia (NH3, R-717) and carbon dioxide (CO2, R-744). Hydrocarbons (methane, ethane, propane, butane, ethylene, and propylene) would be good alternatives because of being non-toxic and having good refrigerant properties. However, they are also flammable.</p>
+<div class="page-columns page-full"><p>R-717 is one of the oldest refrigerants in use today. It was introduced as a refrigerant in 1858 in a vapour absorption system, then in 1873 in a vapour compression system. It became commercially available in 1913 (ASHRAE, 2018)<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. It has been the second mostly used refrigerant in the refrigeration systems for fishing vessels (UNEP, 2016) and it is the main refrigerant used onboard Norwegian fishing vessels (Nordtvedt and Widell, 2020)<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>. This is because it has zero global warming potential (GWP), low molecular weight, high evaporation enthalpy, simple leak detection and oil management. It also needs less stringent drying procedures compared to other refrigerants. However, it is flammable, therefore during the design phase, this must be considered, and the necessary measures must be done during operation. Moreover, the materials like copper, zinc and their alloys cannot be used with R-717 due to corrosion (Lorentzen, 1988)<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Lastly, a separate refrigerating machinery room is required for R-717 systems in the ships (DNV, 2011) which necessitates the usage of large space.</p><div class="no-row-height column-margin column-container"><li id="fn3"><p><sup>3</sup>&nbsp;ASHRAE 2018</p></li><li id="fn4"><p><sup>4</sup>&nbsp;TSN WIDELL 2020</p></li><li id="fn5"><p><sup>5</sup>&nbsp;Lorentzen 88</p></li></div></div>
+<p>R-744 was proposed to be applied as a refrigerant in 1850 by Alexander Twining and then first R-744 refrigeration system was built in 1860 by S.C. Lowe (Koegelenberg et al., 2020). R-744 gained favour during 1880s. Its utilization declined after 1925 but it was applied until the 1950s, especially in marine applications. It lost market shares with the introduction of non-natural low-pressure refrigerants and substituted by them from 1950 to 1970 (Pearson, 2005). Nevertheless, in the time of the rising concerns over climate change, it has regained the attention since the achievement of the effective control of the transcritical vapour compression cycle’s capacity by Gustav Lorentzen (Lorentzen, 1990). It is estimated by shecco that the number of transcritical R-744 refrigeration systems in 2020 is above 35,000 globally (Koegelenberg et al., 2020). Owing to firstly being non-toxic and non-flammable, secondly having low GWP (at 100 years is 1), and then excellent thermophysical and transport properties, such as high thermal conductivity and vapour density, and low viscosity. The number of R-744 refrigeration systems, particularly R-744-only solutions, is increasing in the applications for supermarkets, hotels, malls, etc. Besides that, R-744-only solutions are very attractive for the energy-efficient integrated systems with heat recovered for domestic hot water and space heating along with meeting cooling and freezing demands.</p>
+<p>According to the review study by Söylemez et al.&nbsp;(2022), the application of transcritical R-744 units in fishing vessels operating in cold-climate regions is increasing. If there is a need for freezing applications onboard, the R-744 systems are the preferred refrigeration technology. This is because, at first, the freezing temperatures are limited to around -40 °C in R-717 systems (Mønsted, 2011). Secondly, it is possible to design compact R-744 systems with the freezing temperatures around -50 °C. This reduces the freezing time and the required suction pipe diameters for the system. In some fishing vessels where the dominant cooling load is due to RSW cooling, R-717 is a viable and applied option too.</p>
+<p>For the higher seawater temperatures (around 30 °C), the system design must be adapted for the high heat-rejection seawater temperatures, and it is dependent on the type of refrigeration demand and capacity. If the demand for chilling/RSW is higher, R-717 is the most energy efficient solution. If there is a higher demand for freezing, a cascade R-717/R-744 unit is probably more suitable solution because of the lower freezing temperatures achieved by R-744. In these systems, worth to mention that since the preservation of valuable food and the limited space required by the cooling/freezing equipment, decreasing the freezing time has a higher priority than the energy efficiency for ship owners.</p>
+<p>Moreover, previous research activity at SINTEF and NTNU has contributed to the development of efficient and safe R-744 systems for various application from RSW units, supermarkets to industrial heat pumps. A change to energy efficient systems using natural refrigerants, on a global scale, would lead to a significant contribution in reducing the carbon footprint of the fishing sector. If, instead, the phase-out is done in the «easiest» way, to HFCs, the carbon footprint will rather increase than decrease. It is therefore of outmost importance for knowledge transfer regarding the use of natural refrigerants.</p>
+</div>
+<div class="column-screen-inset-shaded">
+<table class="table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 33%">
+<col style="width: 40%">
+<col style="width: 12%">
+<col style="width: 3%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Type</th>
+<th>Fishing vessels</th>
+<th>Passenger/Cruise ships</th>
+<th>Cargo</th>
+<th>Others</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Purpose of main refrigeration equipment</strong></td>
+<td>Chilling of the catch</td>
+<td>Air conditioning (AC) and provision cooling/freezing</td>
+<td>Maintain temperature of the cargo, air conditioning</td>
+<td>Air conditioning</td>
+</tr>
+<tr class="even">
+<td><strong>Current working fluids</strong></td>
+<td>Globally: R22<br> Europe: R22/HFC<br> Nordic: R717, R744, HFC</td>
+<td>Nordic: HFC<br> Globally: R22, HFC, R744 for provision cooling and freezing</td>
+<td>Nordic: HFC<br> Globally: R22, HFC</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Challenges with current working fluids</strong></td>
+<td>Fast phase out of R22 required<br> High cost of HFC due to shortage in the European market (EU Regulation)<br> Safety requirements for R717 equipment</td>
+<td>Fast phase out of R22 required<br> High cost of HFC due to shortage in European market (EU Regulation)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>Alternative/future working fluids</strong></td>
+<td>R717 and R744</td>
+<td>R717, hydrocarbons (e.g.&nbsp;R290) and R744</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Advantage with alternative working fluids</strong></td>
+<td>R717: well-known and high energy efficiency for chilling equipment<br> R744: high performance in deepfreezing/batch freezing applications, non-flammable and non-toxic</td>
+<td>High-energy efficient chillers for AC units with R717 and R290<br> High-energy efficiency, global availability and safety with R744 for direct expansion (and indirect) provision cooling/freezing units</td>
+<td>High-energy efficient chillers for AC units with R717 and R290</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="img-capt">
+<p>A summary of feasible natural working fluid alternatives for different applications. Note: R744 is carbon dioxide, R717 is ammonia</p>
+</div>
+</div>
+</section>
+<section id="regulations" class="level2">
+<h2 class="anchored" data-anchor-id="regulations">Regulations</h2>
+<div class="main-text">
+<p>The main regulatory institution for marine refrigeration plants are the International Maritime Organization (IMO) and the Classification Societies.</p>
+<p><strong>International regulations</strong>: The IMO convention MARPOL covers international regulations for the prevention of pollution of the marine environment by ships from operational or accidental causes. MARPOL, Annex VI, regulates emissions to air, including leakage of refrigerants. New installations containing CFC or Halon are not permitted on ships constructed on or after 19 May 2005, while new installations of HCFC equipment was prohibited after 1 January 2020, both on new and existing ships. The GWP of refrigerants is not constrained by any IMO mandatory requirements, thus there are no restrictions for using HFCs on board ships. Even though IMOs future targets on reduced climate impact consider the greenhouse warming impact of ships. Therefore, in addition to CO2-emissions, other equivalent carbon emissions (such as F-gases used as refrigerants) should be considered.</p>
+<p><strong>European regulations</strong>: The first EU Regulation No.&nbsp;842/2006 on fluorinated greenhouse gases (F-gases) was adopted in 2006 with the aim to reduce emissions of fluorinated greenhouse gases through, for example, periodic leak tests, record keeping, proper recovery and certification. The regulation only applies to stationary equipment, thus not to marine vessels (European Commission, 2006). In 2014 a new EU Regulation on F-gases, No 517/2014, was adopted, and applies from 1 January 2015 (European Commission, 2014). Except from strengthening the existing leakage prevention measures it also limits the production and use of F-gases.</p>
+<p>The regulations concerning leakage prevention, record keeping and certification, still does not apply to ships, while the recovery regulation does. There is also a general obligation (for all type of plants) to avoid unintentional HFC-leakages. The service ban on existing high GWP-systems also applies to ships. This means that installations containing an HFC with a GWP &gt; 2,500 and an amount corresponding to 40 tonnes CO2 equivalents are prohibited to be recharged with new refrigerant after 1 January 2020 and with recycled refrigerant after 1 January 2030. Furthermore, the limits on the amount of F-gases that can be put on the EU market as well as the ban of using F-gases in many types of new equipment will have an indirect impact also on the shipping sector, such as lower availability and higher price.</p>
+<p>In the future planning for investments, it is therefore important to take into consideration that the average GWP value of F-gases (calculated as CO2-eq.) imported to the EU will decline according to the schedule specified in Annex V of the regulation. This will have an impact on market availability and prices of GWP refrigerants for all applications.</p>
+</div>
+</section>
+<section id="classification-societies" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="classification-societies">Classification Societies</h2>
+<div class="main-text">
+<p>Classification societies set specific requirements for the design, construction, and maintenance of ships as a complete system. Minimum requirements are set for all components that are relevant to safety, in line with the International Convention for the Safety of Life at Sea (SOLAS).</p>
+<p>Specific requirements related to marine refrigeration applying natural refrigerants are not fully developed. Lloyd’s Register and DNV have to some extent included the use CO2 of as refrigerant, however with different requirements.</p>
+</div>
+<div class="column-screen">
+<div class="img-capt">
+<p><img src="image.png" class="img-fluid"></p>
+<p>Example of regulations for R744 as working fluid on cruise ships</p>
+</div>
+</div>
+<div class="main-text">
+<p>In addition to minimum requirements, most Classification Societies are offering class notations as a proof of compliance with additional pollution prevention measure, for example the use of low-GWP refrigerants.</p>
+<p><strong>DNV</strong> offers two class notations including additional requirements on refrigeration systems having more than 10 kg initial charge of refrigerant in centralised air conditioning systems and provision plants. Domestic type stand-alone air conditioning units and refrigerators do not fall into requirements</p>
+<ul>
+<li>Class notation «Clean»: The use of ozone depleting substances is not permitted. The refrigerant may be an HFC or natural refrigerants, such as NH3 or CO2. Annual refrigerant leakage shall be not more than 10% of the total refrigerant charge for each system.</li>
+<li>Class notation «Clean Design»: Refrigerants shall be either a natural refrigerant (e.g., NH3 or CO2) or alternatively an HFC with GWP ≤ 2000. This means that the commonly used refrigerant R404A is prohibited, but still allows the use of, e.g., R-134a and R407C.</li>
+</ul>
+<p><strong>ABS</strong> offers one class notations with additional requirements to MARPOL</p>
+<ul>
+<li>ENVIRO+ prohibits the use of refrigerants with a GWP &gt; 2000, other for ships with the notation EP2020+. The EP2020+ signifies the commitment to replace the existing refrigerant with one having a maximum GWP of 2000</li>
+</ul>
+<p><strong>Lloyds</strong> offers one class notations, and on supplementary «environmental character, related to refrigeration systems.</p>
+<ul>
+<li>«ECO rules»: The use of ODS in existing and new installations is prohibited, and «where possible», natural refrigerants, such as ammonia, carbon dioxide and Hydrofluoroolefins (HFOs), should be used». For the use of HFCs, there is a maximum GPW limit of 1950. These requirements include permanently installed refrigeration and air conditioning installations with more than 3 kg of refrigerant, but does not apply to stand-alone refrigerators, freezers and ice makers used in galleys, pantries, bars and crew accommodation.</li>
+<li>«Character R”; For assignment of the R character, natural refrigerants are to be used in all main refrigeration systems such as provision rooms and AC plants. Small factory-built system(s) that use refrigerants having a GWP &lt; 1,950 are allowed</li>
+</ul>
+<p><strong>RINA</strong> (Registro Italiano Navale) offers several different class notations, of which the most relevant in this context are «Clean Air» and «GREEN PLUS»</p>
+<ul>
+<li>«CleanAir» includes requirements on centralised refrigeration systems. The use of ODS is prohibited, the maximum allowable GWP is 2000, and the maximum annual leakage rate is 10%.</li>
+<li>«GREEN PLUS»: include restrictions on the use of GWP refrigerants in central refrigerating facilities, such as provision refrigeration systems and air conditioning plants. They do not apply to domestic type standalone refrigerators and air conditioning systems. There are two alternatives for complying:
+<ul>
+<li>Avoid use of refrigerants with GWP &gt; 150. If natural refrigerants are applied (i.e., CO2) the energy efficiency must be ±20% to traditional refrigeration systems.</li>
+<li>Design the system minimising piping systems carrying the refrigerant.</li>
+</ul></li>
+</ul>
+<p><strong>Bureau Veritas</strong>: The class notation CLEANSHIP: prohibits the use of ODS (HCFCs) in the ship’s centralized refrigerating and air conditioning plants, while CLEANSUPER additionally requires that all refrigerants used onboard have a GWP not exceeding 2000.</p>
+</div>
+
+
+</section>
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">The Maritime Refrigeration Technology Hub (2021-)</div>   
+    <div class="nav-footer-center"><a href="./contact.html">Contact</a></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
