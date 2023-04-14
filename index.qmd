@@ -74,7 +74,7 @@ The initiative for the hub is taken by Sintef Ocean, Sintef Energy Research and 
 :::
 
 ::: {.projects}
-
+::: {.projects-parent}
 <div class="grid">
   <div class="g-col-2"></div>
 
@@ -114,7 +114,7 @@ Cruising towards zero emission this project aims to develop energy-efficient tec
 </div>
 
 :::
-
+:::
 
 
 
@@ -137,9 +137,9 @@ Cruising towards zero emission this project aims to develop energy-efficient tec
 Senior researcher\
 SINTEF Ocean 
 
-<a href="https://www.linkedin.com/in/kristina-widell-40a9b529/"><img src="linkedin.svg" width="16" height="16"></a>&nbsp;&nbsp;
-<a href="mailto:kristina.widell@sintef.no"><img src="envelope.svg" width="16" height="16"></a>&nbsp;&nbsp;
-<a href="https://orcid.org/0000-0002-8132-2217"><img src="ORCIDiD_iconvector.svg" width="16" height="16"></a>
+<a href="https://www.linkedin.com/in/kristina-widell-40a9b529/">{{< fa brands linkedin color=red >}}</a>&nbsp;&nbsp;
+<a href="mailto:kristina.widell@sintef.no">{{< fa envelope color=#eee >}}</a>&nbsp;&nbsp;
+<a href="https://orcid.org/0000-0002-8132-2217">{{< fa brands orcid color=white >}}</a>
 
 :::
 :::
@@ -158,8 +158,8 @@ SINTEF Ocean
 Researcher\
 SINTEF Energy Research 
 
-<a href="https://www.linkedin.com/in/cecilia-gabrielii-62085811a"><img src="linkedin.svg" width="16" height="16"></a>&nbsp;&nbsp;
-<a href="mailto:cecilia.gabrielii@sintef.no"><img src="envelope.svg" width="16" height="16"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/cecilia-gabrielii-62085811a">{{< fa brands linkedin color=red >}}</a>&nbsp;&nbsp;
+<a href="mailto:cecilia.gabrielii@sintef.no">{{< fa envelope color=#eee >}}</a>&nbsp;&nbsp;
 
 
 :::
@@ -179,9 +179,7 @@ SINTEF Energy Research
 Professor\
 Dep. of EPT, NTNU 
 
-<a href="https://www.linkedin.com/in/armin-hafner-75104125a"><img src="linkedin.svg" width="16" height="16"></a>&nbsp;&nbsp;
-<a href="mailto:armin.hafner@ntnu.no"><img src="envelope.svg" width="16" height="16"></a>&nbsp;&nbsp;
-<a href="https://orcid.org/0000-0002-3586-578X"><img src="ORCIDiD_iconvector.svg" width="16" height="16"></a>
+<a href="https://www.linkedin.com/in/armin-hafner-75104125a" style="decoration:none;">{{< fa brands linkedin color=red >}}</a>&nbsp;&nbsp; <a href="mailto:armin.hafner@ntnu.no">{{< fa envelope color=#eee >}}</a>&nbsp;&nbsp; <a href="https://orcid.org/0000-0002-3586-578X">{{< fa brands orcid color=white >}}</a>
 
 :::
 :::
