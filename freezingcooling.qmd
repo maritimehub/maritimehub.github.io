@@ -28,6 +28,8 @@ For cruise ships, the energy demand of the hotel facilities onboard constitutes 
 Onboard conservation is important for preserving quality and prolonging shelf life of the fish, and there is a wide range of methods applied. In order to preserve quality and shelf life of the fish, most fishing vessels have systems and methods for keeping the fish cold. What kind of system or method is employed will vary by both vessel size and target species. Across all groups, the three most common onboard preservation methods for Norwegian vessels are chilling in refrigerated seawater (RSW), ice/slurry/passive chilling and freezing. The following sections are descriptive for Norwegian vessels in particular.
 :::
 ::: {.column-screen-inset-shaded}
+<div style="max-width: 1800px; margin: 0 auto;">
+
 ```{python}
 #| echo: false
 fig = go.Figure(genSankey(data, cat_cols=['Species', 'Conservation method'], value_cols='Rundvekt', title=None))
@@ -44,6 +46,7 @@ fig.show()
 ::: {.img-capt} 
 Sankey diagram showing the relative size of common onboard conservation methods employed by Norwegian fishing vessels, by catch volume. Based on catch data for 2021
 :::
+</div>
 :::
 ::: {.main-text}
 RSW systems are typically employed on purse seine vessels that target pelagic species such as mackerel and herring. For some species such as blue whiting, the system is denoted RFW since freshwater is used instead of seawater. There are approximately 70 active vessels within this fleet segment in Norway, ranging in size (length) from 40 to almost 90 meters. In addition, there are some smaller vessels employing RSW systems, but the vessels must be of a certain size due to size of the systems. A RSW system consists of one or more refrigeration system, RSW tanks, pumps and piping for circulation. The caught fish is pumped from the sea into one (or more) of the RSW tanks where it is mixed with prechilled seawater. The catch is then rapidly chilled down towards target temperature, usually in the range -1,5 – 0 °C, which is maintained until harbour is reached. Typical duration of a fishing trip for such a vessel is between 3-7 days. Depending on vessel size there are usually between 6 to 12 RSW tanks with a total capacity between 600 to almost 3000 m3. The refrigeration systems are usually designed with a specific refrigeration capacity per m3 of approx. 1,1 kW/m3, meaning that refrigeration capacities range from shy of 1 MW to above 3 MW. Ammonia (R717) is then typically employed in these systems, using large screw compressors. Smaller RSW systems employing CO2 (R744) has been introduced recently, enabling smaller vessels (down to 10 m) to switch from traditional chilling with ice to RSW.  RSW chilling is the most common method for onboard conservation going by catch volume.
