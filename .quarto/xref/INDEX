@@ -31,5 +31,14 @@
   },
   "pubs/1/index.qmd": {
     "index.html": "fd5204b2"
+  },
+  "news/norfishing/index.qmd": {
+    "index.html": "444ea97c"
+  },
+  "news/launch/index.qmd": {
+    "index.html": "bc7985d3"
+  },
+  "news/norfishing2/index.qmd": {
+    "index.html": "0fc577f0"
   }
 }

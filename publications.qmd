@@ -52,10 +52,10 @@ for index, row in df.iterrows():
 i = 0
 for index, row in df.iterrows():
     if (i % 2) == 0:
-        print('::: {.grid style="padding: 1rem;"}')
+        print('::: {.grid style="padding: 1rem; border-radius: 5px;"}')
     else:
         
-        print('::: {.grid style="background-color: #eee; padding: 1rem;"}')
+        print('::: {.grid style="background-color: #eee; padding: 1rem; border-radius: 5px;"}')
     print('::: {.g-col-4}')
 
     if pd.isnull(row['IMG']):
@@ -73,7 +73,7 @@ for index, row in df.iterrows():
 
     print('::: {.g-col-8 style="self-align: start;"}')
 
-    print(f'<span style="color:#2c3e50;">**{row["TITLE"]}**</span>\\')
+    print(f'<span style="color:#2c3e50; font-size: 20px;">**{row["TITLE"]}**</span>\\')
     print('<font size="3">')
     print(f'*By <span style="color:#18BC9C;">{string.capwords(row["AUTHOR"])}</span>. Published in/by {row["PUBLISHER"]} at {row["DATE"].date()}.*')
     print("</font>\n")

@@ -1,0 +1,9 @@
+---
+title: "Presenting at NorFishing"
+author: Cecilia Gabrielii
+date: 2022-07-05
+categories: [NorFishing, Fishing]
+image: DSC_0928_Fotor_1-1024x685.jpg
+---
+
+Cecilia Gabrielii will hold a presentation during this years NorFishing titled 'Realisation of low carbon foot print pelagic trawlers - a case study'. Carbon footprint (CF) assessments of seafood from captured fisheries generally conclude that the fishing stage is the dominant contributor. This is primarily caused by greenhouse gas (GHG) emissions from combustion of diesel fuel for powering the propulsion and refrigeration systems. Tackling climate change is a shared responsibility, and the fishing sector must contribute by taking advantage of innovative technologies available today, and support development of new technology. The objective of this presentation is to show how this has been realized on a pelagic trawler.

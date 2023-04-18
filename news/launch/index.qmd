@@ -1,0 +1,9 @@
+---
+title: "Launching THe Maritime Refrigeration Technology Hub (MRTH)"
+author: Site
+date: 2022-07-05
+categories: [MRTH]
+image: img.jpg
+---
+
+From today the MRTH is available online. The Maritime Refrigeration Technology Hub is established as a response to the need for intensified knowledge transfer and information distribution regarding utilization of more climate friendly solutions to heating and cooling onboard maritime vessels. Currently there is only scattered information available on how the maritime sector could leapfrog directly towards a refrigeration technology with a low environmental impact, and hence the intention of this web-based technology hub is to collect and disseminate information, experience and knowledge to accelerate this transition for the maritime sector.

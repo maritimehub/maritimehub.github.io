@@ -1,3 +1,33 @@
 ---
 title: 'Stakeholders'
+
 ---
+::: {.column-page}
+::: {.grid }
+
+::: {.g-col-4 style="box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.51)"}
+
+Test
+:::
+
+::: {.g-col-4 style="background-color: white; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.51); padding: 8px; border-radius: 5px;"}
+
+![](stakeholders/Sorheim-holding-logo1.jpg)
+
+<div style="font-size: 22px; text-align: center;">**Sørheim Holding AS**</div>
+<br>
+<div style="font-size: 18px; text-align: justify; height: 320px;">
+The company has two state of the art vessels for trawling and seine fishing. It has long traditions within fishing and are forerunners with respect to implementation of new technology for lowering of environmental impact.
+</div>
+
+
+:::
+::: {.g-col-4 style="box-shadow: 5px 5px 5px black; justify-content: center;"}
+
+Test
+:::
+
+
+:::
+
+:::

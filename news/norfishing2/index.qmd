@@ -1,0 +1,12 @@
+---
+title: "Presenting the MRTH webpage at NorFishing 2022"
+author: Site
+date: 2022-07-05
+categories: [NorFishing, Fishing]
+image: img.jpg
+---
+::: {.main-text}
+
+The Maritime Refrigeration Technology Hub website be presented at during this year’s NorFishing in Trondheim. The presentation is part of a miniseries titled “Grønn omstilling i blått hav” presented at Forskningstorget A-120. The presentation will give a short overview of the webpage and explain how the webpage will contribute to collect and disseminate information, experience and knowledge to accelerate the transition towards a refrigeration technology with a low environmental impact in the maritime sector
+
+:::
