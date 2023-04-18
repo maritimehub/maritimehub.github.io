@@ -3,6 +3,7 @@ title: "Heat and cold recovery"
 format:
     html:
         toc: true
+css: news.css
 ---
 
 ## Cold recovery

@@ -27,7 +27,7 @@ website:
   sidebar:
     - title: "More"
       contents:
-        - section: "Other topics"
+        - section: "**Other topics**"
           contents:
           - freezingcooling.qmd
           - heatcold.qmd

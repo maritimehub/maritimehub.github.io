@@ -3,6 +3,7 @@ title: "Sustainability"
 format:
     html:
         toc: true
+css: news.css
 ---
 
 ## Fishing vessels
