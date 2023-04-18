@@ -1,9 +1,10 @@
 ---
 title: 'Publications'
+toc: false
 ---
 
 ::: {.column-page}
-
+# Publications
 This is a list of available publications generated in the projects CoolFish and CruiZE. For a short summary, please selected the 'Detailed' tab.
 
 ```{python}

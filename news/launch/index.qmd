@@ -1,5 +1,5 @@
 ---
-title: "Launching THe Maritime Refrigeration Technology Hub (MRTH)"
+title: "Launching The Maritime Refrigeration Technology Hub (MRTH)"
 author: Site
 date: 2022-07-05
 categories: [MRTH]

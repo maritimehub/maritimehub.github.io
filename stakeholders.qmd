@@ -1,33 +1,105 @@
 ---
 title: 'Stakeholders'
+toc: false
 
 ---
 ::: {.column-page}
-::: {.grid }
 
-::: {.g-col-4 style="box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.51)"}
 
-Test
-:::
+# Fishing, transport and cruise-liner corporations
 
-::: {.g-col-4 style="background-color: white; box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.51); padding: 8px; border-radius: 5px;"}
-
-![](stakeholders/Sorheim-holding-logo1.jpg)
-
-<div style="font-size: 22px; text-align: center;">**Sørheim Holding AS**</div>
-<br>
-<div style="font-size: 18px; text-align: justify; height: 320px;">
-The company has two state of the art vessels for trawling and seine fishing. It has long traditions within fishing and are forerunners with respect to implementation of new technology for lowering of environmental impact.
+<div class="sh-container">
+<div class="sh-box">
+  <a href="https://sorheimholding.no/" target="_blank">
+    <img src="stakeholders/Sorheim-holding-logo1.jpg" alt="Sørheim Holding AS">
+  </a>
+  <h2>Sørheim Holding AS</h2>
+  <p>The company has two state of the art vessels for trawling and seine fishing. It has long traditions within fishing and are forerunners with respect to implementation of new technology for lowering of environmental impact.</p>
 </div>
+<div class="sh-box">
+  <a href="https://www.facebook.com/Bluewildfisheries/" target="_blank">
+    <img src="stakeholders/Bluewild-logo1-1.png" alt="Bluewild AS">
+  </a>
+  <h2>Bluewild AS</h2>
+  <p>Based in Ålesund Bluewild is a seafood company with 90 employees working both onshore and offshore. The company owns two trawlers and in 2022 they have contracted a new innovative factory trawler for increased efficiency and sustainability</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.carnivalcorp.com/" target="_blank">
+    <img src="stakeholders/Carnival-CorporationPLC-1.jpg" alt="Carnival Crop. & PLC">
+  </a>
+  <h2>Carnival Crop. & PLC</h2>
+  <p>Carnival is the world’s largest cruise operator which consist of over 100 ships, visiting more than 700 ports around the world. Their global cruise line brands includes Carnival Cruise Line, Holland America Line, Princess Cruises and Seabourn in North America; P&O Cruises (UK) and Cunard in England; AIDA Cruises in Germany; Costa Cruises in ltaly; and P&O Cruises in Australia.</p>
+</div></div>
 
+# Vendors
 
-:::
-::: {.g-col-4 style="box-shadow: 5px 5px 5px black; justify-content: center;"}
+<div class="sh-container">
+<div class="sh-box">
+  <a href="https://www.ptg.no/en/" target="_blank">
+    <img src="stakeholders/PTG-logo1.jpg" alt="Perfect Temperature Group AS">
+  </a>
+  <h2>Perfect Temperature Group AS</h2>
+  <p>PTG develop and deliver environment-friendly solutions for refrigeration, freezing and enhancing energy efficiency. They are a substantial supplier to the grocery sector in northern Norway and to the seafood market nationally and internationally.</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.teknotherm.no" target="_blank">
+    <img src="stakeholders/Tenotherm-1536x349.png" alt="Teknotherm Marine AS">
+  </a>
+  <h2>Teknotherm Marine AS</h2>
+  <p>Teknotherm marine has a history dating back to 1926 as a designer, contractor and manufacturer of high quality Heating, Ventilation, Air-conditioning and Refrigeration systems. Development and application of new technology is an important part of their strategy to be the most innovative, climate-friendly and attractive supplier in the HVAC&R market.</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.pyro.no" target="_blank">
+    <img src="stakeholders/UlmatecPyro70years.webp" alt="Ulmatec Pyro AS">
+  </a>
+  <h2>Ulmatec Pyro AS</h2>
+  <p>Ulmatec Pyro is a leading supplier and manufacturer of Waste Heat Recovery systems and Waste Energy system for optimal recovery of surplus heat from marine propulsion systems.</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.danfoss.com/en/" target="_blank">
+    <img src="stakeholders/Danfoss-logo.png" alt="Danfoss">
+  </a>
+  <h2>Danfoss</h2>
+  <p>Danfoss is a Danish based company and a global producer of components and solutions for cooling and heating. They deliver an extensive range of products and solutions across business segments of Climate Solutions, Drives and Power Solutions.</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.mmcfirstprocess.com/" target="_blank">
+    <img src="stakeholders/MMC-First-Process-Logo.png" alt="MMC First Process AS">
+  </a>
+  <h2>MMC First Process AS</h2>
+  <p>MMC First Process offers complete and sustainable system solutions for the handling, processing and cooling of fish to the seafood industry within wild catch and aquaculture.</p>
+</div>
+<div class="sh-box">
+  <a href="https://iso-therm.com/" target="_blank">
+    <img src="stakeholders/Isotherm-inc-logo.png" alt="Isotherm, Inc.">
+  </a>
+  <h2>Isotherm, Inc.</h2>
+  <p>Isotherm, Inc. is a custom manufacturer of specialized heat exchangers, pressure vessels, and packaged systems for various industries such as refrigeration, oil & gas, process and renewable energy.</p>
+</div>
+<div class="sh-box">
+  <a href="https://gasnor.no/en/" target="_blank">
+    <img src="stakeholders/gasnor-logo.png" alt="Gasnor AS">
+  </a>
+  <h2>Gasnor AS</h2>
+  <p>Gasnor is Norway’s largest natural gas company. They buy, produce, distribute and sell natural gas, mainly to the industry or as fuel for ships, but also to the private market. Gasnor works to increase awareness of natural gas as a low-emission technology in the short term, and gas as a zero-emission technology in the longer term.</p>
+</div></div>
 
-Test
-:::
+# Research and development
 
-
-:::
+<div class="sh-container">
+<div class="sh-box">
+  <a href="https://www.sintef.no/en/" target="_blank">
+    <img src="stakeholders/SINTEF_logo-JPG-blue-CMYK-1536x364.jpg" alt="SINTEF">
+  </a>
+  <h2>SINTEF</h2>
+  <p>SINTEF is Scandinavia’s largest independent research organization and is a non-profit research foundation. The organization have several subdivisions. SINTEF Ocean is conducting research within ocean-based industries, while SINTEF Energy Research is an institute for applied research dedicated to create innovative energy solutions.</p>
+</div>
+<div class="sh-box">
+  <a href="https://www.ntnu.no/" target="_blank">
+    <img src="stakeholders/ntnu_logo-1.png" alt="The Norwegian University of Science and Technology">
+  </a>
+  <h2>The Norwegian University of Science and Technology</h2>
+  <p>NTNU has a main profile in science and technology, a variety of programmes of professional study, and great academic breadth that also includes the humanities, social sciences, economics, medicine, health sciences, educational science, architecture, entrepreneurship, art disciplines and artistic activities.</p>
+</div></div>
 
 :::

@@ -7,10 +7,8 @@ website:
     location: navbar
     type: overlay
   page-footer:
-    left:
-      The Maritime Refrigeration Technology Hub (2021-)
     center:
-      <a href="contact.qmd">Contact</a> 
+      The Maritime Refrigeration Technology Hub (2022-2023) | <a href="contact.qmd">Contact</a> 
   title: "MRTH"
   navbar:
     left:

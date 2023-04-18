@@ -1,4 +1,8 @@
 /* css styles */
+.quarto-title > h1.title {
+    opacity: 0 !important;
+  }
+
 .main-text {
     text-align: justify;
     text-justify: auto;
@@ -19,4 +23,42 @@
 
 .pubtable tr:nth-child(even) { background: #eee; }
 
+
+.sh-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  } 
+   
+.sh-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+
+  }
+  
+  .sh-box img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100px;
+
+  }
+  
+  .sh-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .sh-box p {
+    text-align: justify;
+  }
 

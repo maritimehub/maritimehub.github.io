@@ -8,7 +8,7 @@ toc: false
 ::: {.content-block}
 ::: {.hero-text}
 # The Maritime Refrigeration Technology Hub
-Energy efficient and climate friendly cooling, freezing and heating onboard marine vessels. This hub aims to develop and demonstrate new technologies and solutions for the maritime sector, with respect to thermal onboard systems. The hub is a collaboration between the research partners NTNU, SINTEF Ocean and SINTEF Energy Resarch, together with industry partners.
+Energy efficient and climate friendly cooling, freezing and heating onboard marine vessels. This hub aims to develop and demonstrate new technologies and solutions for the maritime sector, with respect to thermal onboard systems. The hub is a collaboration between the research partners NTNU, SINTEF Ocean and SINTEF Energy Research, together with industry partners.
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <table cellpadding="10" style="background-color:rgba(0,0,0,0)">
 <tbody>
