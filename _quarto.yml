@@ -24,6 +24,16 @@ website:
           - heatcold.qmd
           - fluids.qmd
           - sust.qmd
+  sidebar:
+    - title: "More"
+      contents:
+        - section: "Other topics"
+          contents:
+          - freezingcooling.qmd
+          - heatcold.qmd
+          - fluids.qmd
+          - sust.qmd
+    - title: "News"
 
 
 format:

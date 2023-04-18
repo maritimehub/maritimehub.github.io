@@ -5,6 +5,11 @@ format:
         toc: true
 reference-location: margin
 citation-location: margin
+
+sidebar:
+    contents:
+        - fluids.qmd
+        - sust.qmd
 ---
 
 
