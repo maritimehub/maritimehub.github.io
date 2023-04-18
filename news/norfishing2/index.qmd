@@ -4,6 +4,7 @@ author: Site
 date: 2022-07-05
 categories: [NorFishing, Fishing]
 image: img.jpg
+css: ..\..\news.css
 ---
 ::: {.main-text}
 

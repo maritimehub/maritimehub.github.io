@@ -1,0 +1,20 @@
+.main-text {
+    text-align: justify;
+    text-justify: auto;
+    line-height: 2;
+}
+
+.img-capt {
+    text-align: center;
+    align-self: center;
+    margin-top: 0px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.modebar {
+    display: none !important;
+}
+.quarto-title > h1.title {
+    opacity: 1 !important;
+  }
